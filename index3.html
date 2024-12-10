@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        nav a:hover {
+            background-color: #004080;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .schedule, .booking, .contact {
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Railway Booking System</h1>
+    </header>
+    <nav>
+        <a href="#schedule">Train Schedule</a>
+        <a href="#booking">Book Tickets</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="content">
+        <section id="schedule" class="schedule">
+            <h2>Train Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                        <th>Route</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Express 101</td>
+                        <td>10:00 AM</td>
+                        <td>2:00 PM</td>
+                        <td>City A - City B</td>
+                    </tr>
+                    <tr>
+                        <td>Local 202</td>
+                        <td>11:00 AM</td>
+                        <td>3:00 PM</td>
+                        <td>City C - City D</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="booking" class="booking">
+            <h2>Book Tickets</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="train">Select Train:</label><br>
+                <select id="train" name="train" required>
+                    <option value="express101">Express 101</option>
+                    <option value="local202">Local 202</option>
+                </select><br><br>
+                <label for="date">Travel Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@railwaybooking.com</p>
+            <p>Phone: 9142640152</p>
+            <p>Address: 123 Main Street, City Name</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Railway Booking System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
